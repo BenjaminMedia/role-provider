@@ -1,0 +1,20 @@
+{
+  "name": "bonnier/role-provider",
+  "description": "Laravel package to implement Roles",
+  "type": "laravel-package",
+  "require": {
+    "laravel/framework": "^5.5",
+    "spatie/laravel-permission": "^1.6"
+  },
+  "authors": [
+    {
+      "name": "Bonnier Publications",
+      "email": "interactive@bonnier.dk"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Bonnier\\RoleProvider\\": "src"
+    }
+  }
+}
