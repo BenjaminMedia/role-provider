@@ -15,7 +15,7 @@ trait HasBonnierRoles
     public function getBonnierRoles()
     {
         $roles = [Roles::ROLE_USERS];
-        if($this->subscription_number) {
+        if($this->subscription_number && substr($this->subscription_number, -5) !== config('services.magazine_subscription')) {
             $roles[] = Roles::ROLE_SUBSCRIBERS;
         }
 
